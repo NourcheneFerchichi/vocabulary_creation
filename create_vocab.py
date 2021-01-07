@@ -5,7 +5,7 @@ python create_vocab.py --text_file text.txt --vocab_file vocab.txt
 import numpy
 from absl import app, flags
 flags.DEFINE_multi_string("text_file",None,"Path to the input text.txt")
-flags.DEFINE_multi_string("Path to the output vocab.txt")
+flags.DEFINE_multi_string("vocab_file",None,"Path to the output vocab.txt")
 FLAGS=flags.FLAGS
 def create_vocab(text_file:str,vocab_file:str) -> None:
     """
